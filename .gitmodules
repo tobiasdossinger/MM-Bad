@@ -10,3 +10,6 @@
 [submodule "modules/MMM-iFrame"]
 	path = modules/MMM-iFrame
 	url = https://github.com/alberttwong/MMM-iFrame
+[submodule "modules/MMM-ProfileSwitcher"]
+	path = modules/MMM-ProfileSwitcher
+	url = https://github.com/tosti007/MMM-ProfileSwitcher
