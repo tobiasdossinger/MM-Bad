@@ -43,49 +43,40 @@ var config = {
 			position: "top_left"
 		},
 		{
-			module: "calendar",
-			header: "US Holidays",
-			position: "top_left",
-			config: {
-				calendars: [
-					{
-						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"					}
-				]
-			}
-		},
-		{
-			module: "compliments",
-			position: "lower_third"
-		},
-		{
 			module: "currentweather",
 			position: "top_right",
+			
 			config: {
-				location: "New York",
-				locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Darmstadt",
+				locationID: "2938913",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				appid: "77e569d712c6c4b99d128095f614f9b2"
 			}
 		},
 		{
 			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
+			
 			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Darmstadt",
+				locationID: "2938913",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				appid: "77e569d712c6c4b99d128095f614f9b2"
 			}
 		},
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
+			
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
+						title: "Tagesschau",
+						url: "http://www.tagesschau.de/xml/rss2"
+					},
+					{
+						title: "Robert Koch-Institut",
+						url: "https://www.rki.de/SiteGlobals/Functions/RSSFeed/RSSGenerator_nCoV.xml?nn=2375210",
+				}
 				],
 				showSourceTitle: true,
 				showPublishDate: true,
@@ -93,6 +84,53 @@ var config = {
 				broadcastNewsUpdates: true
 			}
 		},
+	  	//~ {
+		    //~ module: 'MMM-COVID19',
+		    //~ position: "bottom_center",
+		    
+		    //~ config: {
+		      //~ header:"",
+		      //~ updateInterval: 300000,
+		      //~ infoRowClass: "small",
+		      //~ worldStats: true,
+		      //~ countries: [ "Germany", "China", "Italy", "Spain", "USA" ],
+		      //~ headerRowClass: "medium",
+		      //~ rapidapiKey : "4470123edemsh2ad735320587eb8p1c455ejsne1291c34a6ea" // this is an example, do not try to use it for real
+		    //~ }
+	  	//~ },
+		{
+		    module: "MMM-SpaceX",
+		    position: "middle_center",
+		    
+		    config: {
+		        records: 4,
+		        modus: "upcoming",
+		        showExtraInfo: false,
+			showColumnHeader: true,
+		    }
+		},
+		{
+		module: 'iFrame',
+		position: 'bottom_bar',	// This can be any of the regions.
+		config: {
+			// See 'Configuration options' for more information.
+				url: "https://www.twitch.tv/embed/therealknossi/chat",
+				width: "100%", // Optional. Default: 100%
+				height: "400px" //Optional. Default: 100px
+			}
+		},
+		{
+		  module: "MMM-NowPlayingOnSpotify",
+		  position: "top_left",
+
+		  config: {
+		    clientID: "d97133acc15342cd8e3b86c1f55e0cb2",
+		    clientSecret: "88d979d59dde4793995c566408c74468",
+		    accessToken: "BQBW3sm-erYDu2x0BSPuOXuLmFrz81pSQ-HR1Y8_zZ0RYXG75EPFJ1UKMbLOZ4ip94TwG9cLd4OppzS4R578WyjMmPwfUJyAtnj9MmgkewFROcspPdsZwwvWAXHrQfjDN7HlhOb2XRFOl75lvYuk",
+		    refreshToken: "AQA_JBzJH7CbbcHDlcB_-n5vk2r4IL_XjGODSVNIH92q26R706fgFyVaZOflDZCRjTZpiZzVeAqTAHd9xtWYGFf6r68aWMwP1zJT5DyYsKDL62HjUWZoowQKvZGQIiWlvLg"
+		  }
+		}
+	
 	]
 
 };
