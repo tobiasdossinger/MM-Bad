@@ -76,6 +76,10 @@ var config = {
 					{
 						title: "Robert Koch-Institut",
 						url: "https://www.rki.de/SiteGlobals/Functions/RSSFeed/RSSGenerator_nCoV.xml?nn=2375210",
+				},
+					{
+						title: "IF-Webseite Activity",
+						url: "https://git.imd.rocks/max.studanski/if-website.atom?feed_token=tk3GkpFxy7iwrDo1yDyh" rel="self" type="application/atom+xml"",
 				}
 				],
 				showSourceTitle: true,
