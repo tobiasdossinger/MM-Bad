@@ -79,7 +79,7 @@ var config = {
 				},
 					{
 						title: "IF-Webseite Activity",
-						url: "https://git.imd.rocks/max.studanski/if-website.atom?feed_token=tk3GkpFxy7iwrDo1yDyh" rel="self" type="application/atom+xml"",
+						url: "https://git.imd.rocks/max.studanski/if-website.atom?feed_token=tk3GkpFxy7iwrDo1yDyh",
 				}
 				],
 				showSourceTitle: true,
