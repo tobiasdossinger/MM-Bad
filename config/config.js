@@ -114,13 +114,15 @@ var config = {
 		    }
 		},
 		{
-		module: 'iFrame',
-		position: 'bottom_bar',	// This can be any of the regions.
+		module: 'MMM-iFrame',
+		position: 'bottom_center',	// This can be any of the regions.
 		config: {
 			// See 'Configuration options' for more information.
-				url: "https://www.twitch.tv/embed/therealknossi/chat",
-				width: "100%", // Optional. Default: 100%
-				height: "400px" //Optional. Default: 100px
+				url: ["https://player.twitch.tv/?channel=montanablack88&muted=true&parent=twitch.tv"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+				updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
+				width: "1280", // width of iframe
+				height: "720", // height of iframe
+				frameWidth: "400" // width of embedded iframe, height is beeing calculated by aspect ratio of iframe
 			}
 		},
 		{
